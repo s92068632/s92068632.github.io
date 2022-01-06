@@ -214,6 +214,7 @@ button:hover
             .menu-bar
             {
                width: 100%;
+               padding: 10px;
             }
             .menu-bar ul li
             {
@@ -225,8 +226,9 @@ button:hover
             }
             
             .menu-bar,
-            .menu-bar ul li
+            body
             {
-                width: 100%;
+                width: 1000px;
+                margin: 50px;
             }
         }
