@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
 *
 {
     padding: 0px;
     margin: 0px;
-    
+    font-family: 'Poppins',sans-serif;
 }
 
 body
@@ -12,7 +15,6 @@ body
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
 .menu-bar
@@ -21,6 +23,9 @@ body
    
     text-align: center;
     background-size: cover;
+    width:100%;
+    padding: 0;
+    margin: 0;
 }
 
 .menu-bar ul
@@ -44,12 +49,19 @@ body
     color: black;
 
 }
-
+.menu-bar ul li:hover
+{
+    background: transparent;
+    border: 2px solid transparent;
+    cursor: pointer;
+    padding-block-start: 10px 10px;
+    
+}
 
 
 .active,.menu-bar ul li:hover
 {
-    background: rgb(251, 189, 95);
+    background: rgba(255, 255, 255, 0.354);
     border-radius: 2px;
 
 }
@@ -64,31 +76,55 @@ body
 
 .linkimg
 {
-    width: 55px;
-    position: fixed;
+    width: 50px;
+    position: absolute;
     left: 10px;
     top: 450px;
+}
+
+.linkimg:hover
+{
+    background: transparent;
+    border: 2px solid transparent;
+    cursor: pointer;
+    padding: 0px 10px;
+    
 }
 
 .link
 {
     width: 50px;
-    position: fixed;
+    position: absolute;
     left: 10px;
     top: 510px;
+}
+.link:hover
+{
+    background: transparent;
+    border: 2px solid transparent;
+    cursor: pointer;
+    padding: 0px 10px;
+    
 }
 
 .lin
 {
     width: 50px;
-    position: fixed;
+    position: absolute;
     left: 10px;
     top: 576px;
+}
+.lin:hover
+{
+    background: transparent;
+    border: 2px solid transparent;
+    cursor: pointer;
+    padding: 0px 10px;
+    
 }
 
 .footer  {
     align-content: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     position: fixed;
     bottom: 0%;
@@ -107,9 +143,8 @@ body
 
 #app{
     font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
-    margin-top: -50px;
+    margin-top: -130px;
 }
 section{
     padding:2rem 9%;
@@ -130,7 +165,6 @@ section{
 
 .hmm h3{
     color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
     border: black;
     letter-spacing: 3px;
 }
@@ -142,14 +176,14 @@ section{
 .hmm .btn{
     font-family: sans-serif;
     text-transform: capitalize;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     font-size: 18px;
     letter-spacing: 0px;
     text-decoration: none;
 }
 button
 {
-    background: #e95500;
+    background: #ffaa33af;
     border-radius: 10px;
     margin: 10px;
     text-decoration: none;
@@ -162,7 +196,7 @@ button
 button:hover
 {
     background: transparent;
-    border: 2px solid #e58d00;
+    border: 2px solid transparent;
     cursor: pointer;
 }
 
@@ -176,14 +210,23 @@ button:hover
 
 
 @media (max-width: 1000px)
-{
-    .menu-bar
-    {
-        margin: 10px;
-        grid-template-columns: repeat(1,1fr);
-    }
-    .menu-bar ul 
-    {
-        grid-template-columns: repeat(2,1fr);
-    }
-}
+        {
+            .menu-bar
+            {
+               width: 100%;
+            }
+            .menu-bar ul li
+            {
+                flex-direction: column;
+            }
+            .menu-bar ul li
+            {
+                margin-bottom: 0;
+            }
+            
+            .menu-bar,
+            .menu-bar ul li
+            {
+                width: 100%;
+            }
+        }
