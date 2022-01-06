@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearl of the Indian Ocean</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="minipro.css">
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1 style = "font-family: cursive;"><center><i class="fa fa-ravelry"> Pearl of the Indian Ocean</i></center></h1>
+    
+    <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="#"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="aboutus.html"><i class="fa fa-user"></i>About Us</a></li>
+
+            <li><a href="queries.html"><i class="fa fa-sticky-note"></i>Queries</a></li>
+            <li><a href="todolist.html"><i class="fa fa-check"></i>To-Do-List</a></li>
+            <li><a href="contactus.html"><i class="fa fa-phone"></i>Contact Us</a></li>
+        </ul>
+    </div>
+    
+
+    <section class="hmm">
+        <div class="con">
+         <h3>adventure is worthwhile</h3>
+         <p>discover new places with us, adventure awaits</p>
+         <button type="button"><a href="locations.html" class="btn">Discover more</a></button>
+        </div>
+    </section>
+    <a href="https://www.Instagram.com" target="_blank"><img id="ins-logo" class="linkimg" src="https://th.bing.com/th/id/R.1e1fe7050fc9d37f3091fa0f40c7fb13?rik=%2bnNxMnyBnDt7Pg&riu=http%3a%2f%2fwilltorock.com%2fwp-content%2fuploads%2f2020%2f02%2fInstagram-Logo.png&ehk=Z8ByAIuOScXjUE1f6M3hvUIiItUAyqJasbgeEBtXi9E%3d&risl=&pid=ImgRaw&r=0">
+    </a>
+    <a href="https://www.whatsapp.com" target="_blank"><img id="whs-logo" class="link" src="https://www.freepngimg.com/thumb/whatsapp/77102-whatsapp-computer-call-telephone-icons-png-image-high-quality.png">
+    </a>
+    <a href="https://www.facebook.com" target="_blank"><img id="fb-logo" class="lin" src="https://freepngimg.com/download/facebook/62487-bluetie-icons-computer-facebook-login-icon-email.png">
+    </a>
+    <br>
+    <br>
+    <br>
+    <footer class="footer">
+ 
+     Copyright © 2021 s92068632 M.A Ishfak Ahamed-Owner- --Tourists_Zones-- #All Rights Reserved.
+ <a href="https://www.instagram.com/">Instagram</a>
+ <a href="https://www.facebook.com/">Facebook</a>
+ <a href="https://twitter.com/?lang=en">Twitter</a>
+</footer>
+
+
+<div id="app">
+    <i class="fa fa-clock-o" aria-hidden="true"></i>
+    {{ message }}  
+</div>
+</body>
+
+
+<script type="text/javascript">
+    
+    new Vue({
+       el: '#app',
+       data: { 
+        message:" date & time"
+         },
+         methods:{
+           callFunction: function () {
+               var currentDate = new Date();
+               document.write(currentDate);
+               var currentDateWithFormat = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+               console.log(currentDateWithFormat);
+           }
+       },
+       mounted () {
+         this.callFunction()
+       }
+    });
+   </script>
+</html>

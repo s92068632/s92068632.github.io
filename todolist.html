@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+    <style>
+
+        *
+        {
+            background-image: url(https://images.pexels.com/photos/3935702/pexels-photo-3935702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-size: cover;
+            background-position: center;
+   
+            font-family: sans-serif;
+        }
+
+        .container {
+            padding: 15px;
+            width: 480px;
+            height: 480px;
+            margin: 5% auto;
+           border-radius:8px;
+        }
+
+        h1 {
+        	padding-top: 10px;
+            letter-spacing: 5px;
+            font-family:'Courier New', Courier, monospace ;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .add{
+            box-shadow: 0px 10px 14px -7px #276873;
+            background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+            background-color:#20404b;
+            border-radius:8px;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+
+        }
+
+
+        .text{
+
+            display:inline-block;
+            color:#9addd8;
+            background: #141414;
+            padding:auto;
+            text-decoration:none;
+            width : 50%;
+
+        }
+
+        ol{
+            color:#141414;
+            margin: 8px;
+            font-size:20px;
+
+        }
+
+        li{
+            margin: 10px;
+        }
+        .edit, .delete{
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            background: #141414;
+            font-family:Arial;
+            font-size:14px;
+            font-weight:bold;
+            padding:auto;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div id="app" class="container">
+        <h1>TO DO LIST</h1>
+
+        <div v-if="!isEditing">
+            <input type="text" class="add-text text" placeholder="Enter here..." v-model="todo">
+            <input type="submit" value="Add" class="add" @click="storeTodo">
+        </div>
+        <div v-else>
+            <input type="text"  v-model="todo" >
+            <input type="submit" value="Update" @click="updateTodo">
+        </div>
+
+        <ol>
+            <li v-for="(todo, index) in todos">
+                {{ todo }}
+                <button @click="editTodo(index, todo)" class="edit">Edit</button>
+                <button @click="removeTodo(index)" class="delete">Delete</button>
+            </li>
+        </ol>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            
+            data: {
+                isEditing: false,
+                todo: '',
+                todos: [],
+                selectedTodo: null
+            },
+            
+            methods: {
+                storeTodo() {
+                    this.todos.push(this.todo)
+                    this.todo = ''
+                },
+
+                removeTodo(index) {
+                    this.todos.splice(index, 1)
+                },
+
+                updateTodo() {
+                    this.todos.splice(this.selectedIndex, 1, this.todo)
+                    this.todo = ''
+                    this.isEditing = false
+                },
+
+                editTodo(index, todo) {
+                    this.isEditing = true
+                    this.todo = todo
+                    this.selectedIndex = index
+                }
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+body
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.125),rgba(0, 0, 0, 0.145)), url(img1.jpg);
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.menu-bar
+{
+    background-image: url(https://images.pexels.com/photos/251603/pexels-photo-251603.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+   
+    text-align: center;
+    background-size: cover;
+}
+
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: rgb(0, 0, 0);
+}
+
+.menu-bar ul li
+{
+    width: 120px;
+    margin: 15px;
+    padding: 8px;
+
+}
+
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+.active,.menu-bar ul li:hover
+{
+    background: rgb(251, 189, 95);
+    border-radius: 2px;
+
+}
+
+
+.menu-bar .fa
+{
+    margin-right: 8px;
+}
+
+
+
+.linkimg
+{
+    width: 55px;
+    position: fixed;
+    left: 10px;
+    top: 450px;
+}
+
+.link
+{
+    width: 50px;
+    position: fixed;
+    left: 10px;
+    top: 510px;
+}
+
+.lin
+{
+    width: 50px;
+    position: fixed;
+    left: 10px;
+    top: 576px;
+}
+
+.footer  {
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    background-color: orange;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.footer a{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+
+
+#app{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    margin-top: -50px;
+}
+section{
+    padding:2rem 9%;
+    margin-top: -100px;
+    font-size: larger;
+
+}
+.hmm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin-top: -10px;
+    margin-left: -70px;
+    position: relative;
+    z-index: 0;
+}
+
+.hmm h3{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    border: black;
+    letter-spacing: 3px;
+}
+
+.hmm p{
+    color: azure;
+
+}
+.hmm .btn{
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: aliceblue;
+    font-size: 18px;
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+button
+{
+    background: #e95500;
+    border-radius: 10px;
+    margin: 10px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 16px 10px;
+    transition: 4s;
+}
+
+button:hover
+{
+    background: transparent;
+    border: 2px solid #e58d00;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px)
+{
+    .menu-bar
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .menu-bar ul 
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wgth@400;500&display=swap" rel="stylesheet" >
+    <title>Locations</title>
+    <style>
+        h3{
+            font-weight: 100;
+            font-family: "Poppins",sans-serif;
+            color: rgb(164, 164, 164);
+            letter-spacing: 4px;
+          
+        }
+        body{
+            background: rgb(0, 0, 0);
+        }
+
+        .place-list{
+            background-color: #f8dca4;
+            padding: 3em;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        .place-list .place{
+            background-color: white;
+            border-radius: 10px;
+            padding: 1em;
+            box-shadow: 0px 10px 5px #e79625;
+            text-align: center;
+            font-family: "Poppins",sans-serif;
+            
+        }
+        .place .title{
+            font-size: 18px;
+            font-weight:bold ;
+            text-transform: uppercase;
+        }
+        .place img{
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .place .text{
+            text-align: left;
+            margin-left: 10px;
+            margin-bottom: 0.5em;
+            font-family: "Poppins",sans-serif;
+        }
+        .place .text .loc{
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 10px;
+            margin: 10px;
+        }
+        .see-button{
+            background-color: #f9ca24;
+            border: none;
+            padding: 1em;
+            border-radius: 5px;
+            font-weight: bold;
+            
+        }
+        
+        .see-button a{
+            text-decoration: none;
+            color: #000000;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-column-gap: 20px;
+            grid-row-gap: 40px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <section class="place-list">
+    <h3>Tourist visiting places in srilanka__</h3>
+    <br>
+
+    <div class="container">
+
+    
+
+    <div class="place">
+        <div class="title">Sigiriya Rock</div>
+        <div class="image">
+            <img src="https://th.bing.com/th/id/R.055e8cc283795d6d20c4248e93c02931?rik=m4%2brhN3JTnFLqQ&riu=http%3a%2f%2fsrilankan.travel%2fwp-content%2fuploads%2f2013%2f08%2fSigiriya.jpg&ehk=5MjpiVlNJmtndf2Dm4E2EPcVB6RJbZMhjRnQ5gFIDwM%3d&risl=&pid=ImgRaw&r=0">
+        </div>
+        <div class="text">
+            <a class="loc" href="https://www.google.com/maps/place/Sigiriya+Rock/@7.9572034,80.7512863,15z/data=!3m1!4b1!4m5!3m4!1s0x3afca15b724c9ab3:0xab1771275b370d52!8m2!3d7.9572035!4d80.7600411?hl=en-US">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">Location</span></a>
+
+                <p>&nbsp;&nbsp;Sigiriya is an ancient rock fortress located in the northern Matale District near the town of Dambulla in the Central Province, Sri Lanka.</p>
+                <div>
+                    <button class="see-button">
+                        <a  href="https://en.wikipedia.org/wiki/Sigiriya"><i>see more</i></a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+
+    <div class="place">
+        <div class="title">Coconut Tree Hill</div>
+        <div class="image">
+            <img src="https://th.bing.com/th/id/OIP.HYjNZKoa7T4tBy5BccHQawHaE8?pid=ImgDet&rs=1">
+        </div>
+        <div class="text">
+            <a class="loc" href="https://www.google.com/maps/place/Coconut+Tree+Hill/@5.9389791,80.4627273,16z/data=!4m5!3m4!1s0x3ae13e324bc0846b:0x35758cdcba8dedcf!8m2!3d5.9392353!4d80.468242?hl=en-US">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">Location</span></a>
+
+                <p>&nbsp;&nbsp;Coconut Tree Hill is presumably the most well-known place in Mirissa. You can watch the sea and Mirissa bay area from the top of this amazing place.</p>
+                <div>
+                    <button class="see-button">
+                        <a  href="https://en.wikipedia.org/wiki/Mirissa"><i>see more</i></a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    <div class="place">
+        <div class="title">Yala National Park Safari</div>
+        <div class="image">
+            <img src="https://www.srilankanilangatours.com/wp-content/uploads/2018/06/sri-lanka-nilanga-tours-things-to-do-Go-on-safari-in-Yala-National-Park-header.jpg">
+        </div>
+        <div class="text">
+            <a class="loc" href="https://www.google.com/maps/place/Yala+National+Park/@6.366667,81.3765913,11z/data=!4m9!1m2!2m1!1syala+national+park+safari!3m5!1s0x3ae5d532c4bf9267:0xab98738832623e7c!8m2!3d6.367914!4d81.5166996!15sChl5YWxhIG5hdGlvbmFsIHBhcmsgc2FmYXJpkgENbmF0aW9uYWxfcGFyaw">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">Location</span></a>
+
+                <p>&nbsp;&nbsp;Yala National Park is the most visited and second largest national park in Sri Lanka, bordering the Indian Ocean.The park consists of five blocks, two of which are now open to the public.</p>
+                <div>
+                    <button class="see-button">
+                        <a  href="https://en.wikipedia.org/wiki/Yala_National_Park"><i>see more</i></a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    <div class="place">
+        <div class="title">Temple of the Sacred Tooth Relic</div>
+        <div class="image">
+            <img src="https://c8.alamy.com/comp/KWYGP4/temple-of-the-sacred-tooth-relic-or-sri-dalada-maligawa-in-kandy-at-KWYGP4.jpg">
+        </div>
+        <div class="text">
+            <a class="loc" href="https://www.google.com/maps/place/Temple+of+the+Sacred+Tooth+Relic/@7.293609,80.6391363,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae3662db149fbf5:0x8165d70ac115e887!8m2!3d7.293609!4d80.641325">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">Location</span></a>
+
+                <p>&nbsp;&nbsp;Glorious Tooth Temple  is a Buddhist temple in Kandy, Sri Lanka. It is located in the royal palace complex of the former Kingdom of Kandy.</p>
+                <div>
+                    <button class="see-button">
+                        <a  href="https://en.wikipedia.org/wiki/Temple_of_the_Tooth"><i>see more</i></a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    <div class="place">
+        <div class="title">Sri Pada / Adam's Peak</div>
+        <div class="image">
+            <img src="https://static.wixstatic.com/media/017d2f_e3f4739496b34b80b272042a66635305~mv2_d_1800_1200_s_2.jpg/v1/fill/w_1000,h_667,al_c,q_90,usm_0.66_1.00_0.01/017d2f_e3f4739496b34b80b272042a66635305~mv2_d_1800_1200_s_2.jpg">
+        </div>
+        <div class="text">
+            <a class="loc" href="https://www.google.com/maps/place/Sri+Pada+%2F+Adam's+Peak/@6.8096425,80.4818786,14z/data=!3m1!4b1!4m5!3m4!1s0x3ae3977589234b59:0x8723ad471d5b37dc!8m2!3d6.809643!4d80.4993882">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">Location</span></a>
+
+                <p>&nbsp;&nbsp;Adam's Peak is a 2,243 m (7,359 ft) tall conical mountain located in central Sri Lanka. It is well known for the Sri Pada "sacred footprint".</p>
+                <div>
+                    <button class="see-button">
+                        <a  href="https://en.wikipedia.org/wiki/Adam%27s_Peak"><i>see more</i></a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+
+    <div class="place">
+        <div class="title">Galle Dutch Fort</div>
+        <div class="image">
+            <img src="https://www.annees-de-pelerinage.com/wp-content/uploads/2019/03/galle-light-house-sri-lanka.jpg">
+        </div>
+        <div class="text">
+            <a class="loc" href="https://www.google.com/maps/place/Galle+Dutch+Fort/@6.0250143,80.2158521,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae173a378ee025d:0xb96f8a16ae16c3fe!8m2!3d6.0250143!4d80.2180408">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">Location</span></a>
+
+                <p>&nbsp;&nbsp;Galle Fort  in the Bay of Galle on the southwest coast of Sri Lanka, was built first in 1588 by the Portuguese.</p>
+                <div>
+                    <button class="see-button">
+                        <a  href="https://en.wikipedia.org/wiki/Galle_Fort"><i>see more</i></a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+
+    <div class="place">
+        <div class="title">Sinharaja Forest Reserve</div>
+        <div class="image">
+            <img src="https://www.swantour.com/blogs/wp-content/uploads/2019/03/Visit-Sinharaja-Forest-Reserve-Sri-lnaka.jpg">
+        </div>
+        <div class="text">
+            <a class="loc" href="https://www.google.com/maps/place/Sinharaja+Forest+Reserve/@6.3827697,80.5998347,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae3e76bd109d45f:0x8c0ef1010649701b!8m2!3d6.3827697!4d80.6020234">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">Location</span></a>
+
+                <p>&nbsp;&nbsp;Sinharaja Forest Reserve is a forest reserve and a biodiversity hotspot in Sri Lanka.</p>
+                <div>
+                    <button class="see-button">
+                        <a  href="https://en.wikipedia.org/wiki/Sinharaja_Forest_Reserve"><i>see more</i></a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+
+    <div class="place">
+        <div class="title">Colombo National Museum</div>
+        <div class="image">
+            <img src="https://youimg1.tripcdn.com/target/100h1f000001grweb8E3E.jpg?proc=source%2Ftrip">
+        </div>
+        <div class="text">
+            <a class="loc" href="https://www.google.com/maps/place/Colombo+National+Museum/@6.9104555,79.8588038,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae2596fa1f4b2af:0xd90a283d68f9a48d!8m2!3d6.9100309!4d79.8609147">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">Location</span></a>
+
+                <p>&nbsp;&nbsp;National Museum of Colombo, also known as the Sri Lanka National Museum is one of two museums in Colombo.</p>
+                <div>
+                    <button class="see-button">
+                        <a  href="https://en.wikipedia.org/wiki/National_Museum_of_Colombo"><i>see more</i></a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    <div class="place">
+        <div class="title">Adisham Bungalow</div>
+        <div class="image">
+            <img src="https://thumbs.dreamstime.com/b/picture-adisham-bungalow-place-nuwaraeliya-rnnatural-garden-flower-include-ban-glow-sri-lanka-124709758.jpg">
+        </div>
+        <div class="text">
+            <a class="loc" href="https://www.google.com/maps/place/Adisham+Bungalow/@6.7724443,80.9287449,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae47112a5dd10af:0xe9e3c37b5ba49e77!8m2!3d6.7724443!4d80.9309336?hl=en">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">Location</span></a>
+
+                <p>&nbsp;&nbsp;Adisham Hall, or Adisham Bungalow is a country house near Haputale, in the Badulla District, Sri Lanka.</p>
+                <div>
+                    <button class="see-button">
+                        <a  href="https://en.wikipedia.org/wiki/Adisham_Hall"><i>see more</i></a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    <div class="place">
+        <div class="title">Lake Gregory</div>
+        <div class="image">
+            <img src="http://www.amayaresorts.com/blog/wp-content/uploads/sites/3/2018/10/Lake-Gregory-Sri-Lanka-1024x683.jpg">
+        </div>
+        <div class="text">
+            <a class="loc" href="https://www.google.com/maps?q=lake+gregory&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjFpI63upv1AhU_sVYBHXGxDGgQ_AUoAnoECAIQBA">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">Location</span></a>
+
+                <p>&nbsp;&nbsp;Lake Gregory  is a reservoir in heart of the tea country hill city, Nuwara Eliya, Sri Lanka.</p>
+                <div>
+                    <button class="see-button">
+                        <a  href="https://en.wikipedia.org/wiki/Lake_Gregory_(Nuwara_Eliya)"><i>see more</i></a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    <div class="place">
+        <div class="title">World's End</div>
+        <div class="image">
+            <img src="http://www.amayaresorts.com/blog/wp-content/uploads/sites/3/2018/09/Worlds-End-Sri-Lanka-Visting-Worlds-End.jpg">
+        </div>
+        <div class="text">
+            <a class="loc" href="https://www.google.com/maps/place/Great+World's+End+Drop/@6.7802554,80.5143158,10z/data=!4m9!1m2!2m1!1sworld+end+nuwara+eliya!3m5!1s0x3ae389cf46cb3f67:0x818e33bb2a32673a!8m2!3d6.7802554!4d80.7944672!15sChZ3b3JsZCBlbmQgbnV3YXJhIGVsaXlhWhgiFndvcmxkIGVuZCBudXdhcmEgZWxpeWGSAQhsYW5kbWFya5oBJENoZERTVWhOTUc5blMwVkpRMEZuU1VOUk9FOVBOVjluUlJBQg">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">Location</span></a>
+
+                <p>&nbsp;&nbsp;World's End is located within the Horton Plains National Park in Nuwara Eliya District, Sri Lanka.</p>
+                <div>
+                    <button class="see-button">
+                        <a  href="https://en.wikipedia.org/wiki/World%27s_End,_Sri_Lanka"><i>see more</i></a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    <div class="place">
+        <div class="title">One Galle Face Mall</div>
+        <div class="image">
+            <img src="https://www.dailynews.lk/sites/default/files/news/2018/06/21/z_pi-One.jpg">
+        </div>
+        <div class="text">
+            <a class="loc" href="https://www.google.com/maps/place/One+Galle+Face+Mall/@6.9273121,79.8428932,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae25bcfdee7764d:0xdf97fbb66912b0c5!8m2!3d6.9273121!4d79.8450819">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">Location</span></a>
+
+                <p>&nbsp;&nbsp;One Galle Face is a mixed-use complex of buildings currently being built near the Galle Face Green in Colombo, Sri Lanka.</p>
+                <div>
+                    <button class="see-button">
+                        <a  href="https://en.wikipedia.org/wiki/One_Galle_Face"><i>see more</i></a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    <div class="place">
+        <div class="title">National Zoo Gardens</div>
+        <div class="image">
+            <img src="https://bmkltsly13vb.compat.objectstorage.ap-mumbai-1.oraclecloud.com/cdn.dailymirror.lk/media/images/image_1499095751-abed4a017d.jpg">
+        </div>
+        <div class="text">
+            <a class="loc" href="https://www.google.com/maps/place/Dehiwala+Zoological+Garden/@6.8542138,79.8619381,13z/data=!4m9!1m2!2m1!1sNational+Zoological+Gardens!3m5!1s0x3ae25baace050325:0xfd90f5bffd93f59f!8m2!3d6.8569811!4d79.8744025!15sChtOYXRpb25hbCBab29sb2dpY2FsIEdhcmRlbnNaHSIbbmF0aW9uYWwgem9vbG9naWNhbCBnYXJkZW5zkgEDem9vmgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVU5UZVY5SFJIZG5SUkFC">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">Location</span></a>
+
+                <p>&nbsp;&nbsp;National Zoological Gardens of Sri Lanka is a zoological garden in Dehiwala, Sri Lanka, founded in 1936.</p>
+                <div>
+                    <button class="see-button">
+                        <a  href="https://en.wikipedia.org/wiki/National_Zoological_Gardens_of_Sri_Lanka"><i>see more</i></a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    <div class="place">
+        <div class="title">Nallur Kandaswamy temple</div>
+        <div class="image">
+            <img src="https://i.pinimg.com/originals/c8/23/f4/c823f4af884c3f5f9277430d74e51e93.jpg">
+        </div>
+        <div class="text">
+            <a class="loc" href="https://www.google.com/maps/place/Nallur+Kandaswamy+Kovil,+%E0%AE%A8%E0%AE%B2%E0%AF%8D%E0%AE%B2%E0%AF%82%E0%AE%B0%E0%AF%8D+%E0%AE%95%E0%AE%A8%E0%AF%8D%E0%AE%A4%E0%AE%9A%E0%AF%81%E0%AE%B5%E0%AE%BE%E0%AE%AE%E0%AE%BF+%E0%AE%95%E0%AF%8B%E0%AE%B5%E0%AE%BF%E0%AE%B2%E0%AF%8D/@9.6745323,80.0272552,17z/data=!3m1!4b1!4m5!3m4!1s0x3afe5418ed6c1b2b:0x7915bb4278791116!8m2!3d9.6745323!4d80.0294439">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">Location</span></a>
+
+                <p>&nbsp;&nbsp;Nallur Kandaswamy Kovil  is a significant Hindu temple, located in Nallur, Northern Province, Sri Lanka.</p>
+                <div>
+                    <button class="see-button">
+                        <a  href="https://en.wikipedia.org/wiki/Nallur_Kandaswamy_temple"><i>see more</i></a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    <div class="place">
+        <div class="title">Nainativu Island</div>
+        <div class="image">
+            <img src="https://www.reddottours.com/uploads/Activities/Visit-to-Nainativu-Island-by-Boat/Visit-to-Nainativu-Island-by-Boat-gallery-pop-up-(2)-min.jpg">
+        </div>
+        <div class="text">
+            <a class="loc" href="https://www.google.com/maps/place/Nainativu/@9.6033196,79.7518773,14z/data=!3m1!4b1!4m5!3m4!1s0x3afe4845eb2fb881:0x5a378527a780e6fb!8m2!3d9.6071274!4d79.7652211">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">Location</span></a>
+
+                <p>&nbsp;&nbsp;Nainativu  is a small but notable island off the coast of Jaffna Peninsula in the Northern Province, Sri Lanka.</p>
+                <div>
+                    <button class="see-button">
+                        <a  href="https://en.wikipedia.org/wiki/Nainativu"><i>see more</i></a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    <div class="place">
+        <div class="title">Kanniya hot water spring</div>
+        <div class="image">
+            <img src="https://ak.jogurucdn.com/media/image/p25/place-2017-01-6-16-3ee97d7222ba1ee9c8bfad4685f0731a.jpg">
+        </div>
+        <div class="text">
+            <a class="loc" href="https://www.google.com/maps/place/%E0%AE%95%E0%AE%A9%E0%AF%8D%E0%AE%A9%E0%AE%BF%E0%AE%AF%E0%AE%BE+%E0%AE%B5%E0%AF%86%E0%AE%A8%E0%AF%8D%E0%AE%A8%E0%AF%80%E0%AE%B0%E0%AF%82%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AF%81+%7C+Kanniya+Hot+Springs+%7C+%E0%B6%9A%E0%B6%B1%E0%B7%8A%E0%B6%B1%E0%B7%92%E0%B6%BA%E0%B7%8F+%E0%B6%8B%E0%B6%AB%E0%B7%94%E0%B6%AF%E0%B7%92%E0%B6%BA+%E0%B6%BD%E0%B7%92%E0%B6%82./@8.6044979,81.1691489,17z/data=!3m1!4b1!4m5!3m4!1s0x3afbbd825aafd47d:0x9d4412e504c63b86!8m2!3d8.6044979!4d81.1713376">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">Location</span></a>
+
+                <p>&nbsp;&nbsp;The Kanniya Hot Springs  is a site with hot wells located in Trincomalee, Sri Lanka.</p>
+                <div>
+                    <button class="see-button">
+                        <a  href="https://en.wikipedia.org/wiki/Kanniya_hot_water_spring"><i>see more</i></a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    <div class="place">
+        <div class="title">Adam's Bridge</div>
+        <div class="image">
+            <img src="https://earth.esa.int/web/earth-watching/content/documents/257246/3374126/Adams-Bridge-Sentinel-2-17112017-full/index.jpeg">
+        </div>
+        <div class="text">
+            <a class="loc" href="https://www.google.com/maps/place/Ram+Setu+%2F+Adam's+Bridge/@9.1078577,79.4279794,11z/data=!3m1!4b1!4m5!3m4!1s0x3afe03eb2a58f9cb:0xd7b3c2369d041bce!8m2!3d9.0864914!4d79.5685186">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">Location</span></a>
+
+                <p>&nbsp;&nbsp;Adam's Bridge  is a chain of natural limestone shoals, between Rameswaram Island,India and  Mannar Island, off the north-western coast of Sri Lanka.</p>
+                <div>
+                    <button class="see-button">
+                        <a  href="https://en.wikipedia.org/wiki/Adam%27s_Bridge"><i>see more</i></a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    <div class="place">
+        <div class="title">Bambarakanda Falls</div>
+        <div class="image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Bambarakanda_Waterfall.jpg">
+        </div>
+        <div class="text">
+            <a class="loc" href="https://www.google.com/maps/place/Bambarakanda+Falls/@6.7733517,80.8290251,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae47660d0e3ef59:0x6863b33a5baad25!8m2!3d6.7733517!4d80.8312138">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">Location</span></a>
+
+                <p>&nbsp;&nbsp;Bambarakanda Falls  is the tallest waterfall in Sri Lanka. With a height of 263 m (863 ft) it ranks as the 461st highest waterfall in the world.</p>
+                <div>
+                    <button class="see-button">
+                        <a  href="https://en.wikipedia.org/wiki/Bambarakanda_Falls"><i>see more</i></a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    <div class="place">
+        <div class="title">Hummanaya</div>
+        <div class="image">
+            <img src="https://www.amayaresorts.com/blog/wp-content/uploads/sites/3/2019/01/hummanaya-sri-lanka.jpg">
+        </div>
+        <div class="text">
+            <a class="loc" href="https://www.google.com/maps/place/Hummanaya+Blow+Hole/@5.9804713,80.7183118,14z/data=!4m9!1m2!2m1!1shummanaya!3m5!1s0x3ae135eddd707e91:0x770058b13ef3eab!8m2!3d5.9779809!4d80.73771!15sCglodW1tYW5heWFaCyIJaHVtbWFuYXlhkgESdG91cmlzdF9hdHRyYWN0aW9u">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">Location</span></a>
+
+                <p>&nbsp;&nbsp;Hummanaya Blowhole  is the only known blowhole in Sri Lanka and it is considered to be the second largest blowhole in the world.</p>
+                <div>
+                    <button class="see-button">
+                        <a  href="https://en.wikipedia.org/wiki/Hummanaya"><i>see more</i></a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    <div class="place">
+        <div class="title">Arugam Bay</div>
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4OomK9wlfYx06FKDylq5C2kHkBIkzW1_tgFETyL2IjLYN87XzwVwPyYgd0ihagRpR_X0&usqp=CAU">
+        </div>
+        <div class="text">
+            <a class="loc" href="https://www.google.com/maps/place/Arugam+Bay+Beach/@6.8393167,81.809542,14z/data=!4m9!1m2!2m1!1sarugam+bay!3m5!1s0x3ae5a2d27b6fafbf:0xc6efd6b59df5db34!8m2!3d6.8404078!4d81.8368478!15sCgphcnVnYW0gYmF5kgEFYmVhY2g">
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text">Location</span></a>
+
+                <p>&nbsp;&nbsp;Arugam Bay  is situated on the Indian Ocean in the dry zone of Sri Lanka's southeast coast, and a historic settlement of the ancient Batticaloa Territory.</p>
+                <div>
+                    <button class="see-button">
+                        <a  href="https://en.wikipedia.org/wiki/Arugam_Bay"><i>see more</i></a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+
+
+    </div>
+    </section>  
+</body>
+</html>
